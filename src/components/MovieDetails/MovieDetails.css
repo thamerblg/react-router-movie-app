@@ -1,0 +1,94 @@
+.imgBg {
+  height: 500px;
+  object-fit: cover;
+  clip-path: polygon(0 0%, 100% 0, 100% 90%, 0% 100%);
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.movie-card {
+  color: #a9a8a3;
+  padding: 0;
+  margin: 30px auto;
+  background: #f0f0ed;
+}
+.image-bg {
+  position: relative;
+}
+.image-bg:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  clip-path: polygon(0 0%, 100% 0, 100% 90%, 0% 100%);
+  transform-origin: 0 0;
+}
+.details {
+  position: relative;
+  margin-top: -250px !important;
+  z-index: 2;
+}
+.img-cover {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+.details .title1 {
+  color: white;
+  font-size: 40px;
+  position: relative;
+}
+.details .title2 {
+  color: #c7c1ba;
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.release {
+  color: #c7c1ba;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.description {
+  margin-top: 50px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #2b2b2a;
+}
+.likes {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.likes svg {
+  margin-right: 5px;
+}
+.iconLove {
+  color: red;
+}
+.category-movie {
+  display: flex;
+}
+.tag {
+  color: black;
+  background: white;
+  border-radius: 10px;
+  padding: 2px 10px;
+  font-size: 14px;
+  margin-right: 10px;
+  line-height: 30px;
+  cursor: pointer;
+  list-style: none;
+  text-transform: capitalize;
+}
+.vieosIframe {
+  margin: 25px auto;
+}
